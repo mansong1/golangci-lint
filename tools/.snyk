@@ -1,0 +1,10 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.22.1
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-LODASH-567746:
+    - svg-term-cli > svg-term > lodash:
+        patched: '2022-03-26T01:51:46.479Z'
+    - svg-term-cli > term-schemes > lodash:
+        patched: '2022-03-26T01:51:46.479Z'
