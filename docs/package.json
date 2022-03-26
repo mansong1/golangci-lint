@@ -48,13 +48,17 @@
     "react-helmet": "^6.1.0",
     "react-icons": "^3.11.0",
     "react-live": "^2.2.3",
-    "url-join": "^4.0.1"
+    "url-join": "^4.0.1",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {},
   "scripts": {
     "build": "make -C .. expand_website_templates && gatsby build",
     "start": "gatsby develop",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
-  }
+    "clean": "gatsby clean",
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
+  },
+  "snyk": true
 }
